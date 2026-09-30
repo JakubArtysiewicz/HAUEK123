@@ -8,15 +8,15 @@
         Title="MainWindow" Height="496" Width="531">
     <Grid Background="#FFC6C6C6">
         <TextBlock x:Name="WybierzPojazdText" HorizontalAlignment="Left" Margin="28,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="20" FontWeight="Bold"><Run Text="Wybierz pojazd"/><Run Language="pl-pl" Text=":"/></TextBlock>
-        <ComboBox HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Width="424">
+        <ComboBox SelectedIndex="0" x:Name="wybraneAutoBox" HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Width="424">
             <ComboBoxItem ContentStringFormat="" Content="Ford Focus mk4 srebrny (10zl/h)"/>
             <ComboBoxItem Content="Dacia Megan Czerwona (10zl/h)"/>
             <ComboBoxItem Content="Volswagen polo (10zl/h)"/>
         </ComboBox>
         <Image HorizontalAlignment="Left" Height="168" Margin="84,124,0,0" VerticalAlignment="Top" Width="333" RenderTransformOrigin="0.335,-0.001" Source="/2318278804_f76e056a6e_o.jpg"/>
-        <TextBox HorizontalAlignment="Left" Margin="190,319,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" Height="38" RenderTransformOrigin="3.595,0.992" FontSize="24"/>
+        <TextBox x:Name="liczbaDni"  HorizontalAlignment="Left" Margin="190,319,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" Height="38" RenderTransformOrigin="3.595,0.992" FontSize="24"/>
         <TextBlock HorizontalAlignment="Left" Margin="53,322,0,0" TextWrapping="Wrap" Text="Liczba Dni" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="podsumuj_button" Click="Button_Click" Content="Podsumuj Rezerwacje" HorizontalAlignment="Left" Margin="93,402,0,0" VerticalAlignment="Top" Height="50" Width="358" FontWeight="Bold" FontSize="24"/>
+        <Button x:Name="podsumuj_button" Click="podsumuj_button_Click" Content="Podsumuj Rezerwacje" HorizontalAlignment="Left" Margin="93,402,0,0" VerticalAlignment="Top" Height="50" Width="358" FontWeight="Bold" FontSize="24"/>
 
     </Grid>
 </Window>

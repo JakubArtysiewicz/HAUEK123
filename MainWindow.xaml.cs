@@ -21,9 +21,14 @@ namespace HAUEK123
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void podsumuj_button_Click(object sender, RoutedEventArgs e)
         {
-
+            Window2 window = new Window2();
+            var item = (ComboBoxItem)wybraneAutoBox.SelectedItem;
+            var liczbaDniInt = int.Parse(liczbaDni.Text);
+            window.wybraneAuto.Text = $"Wybrane auto: {item.Content} Czas Wynajmu:{liczbaDniInt}";
+            window.doZaplaty.Text = $"Do zapłaty: {liczbaDniInt * 10} zł";
+            window.Show();
         }
     }
 }
